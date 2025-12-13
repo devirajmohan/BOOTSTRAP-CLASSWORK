@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <title>Sliding Promotional Banner</title>
+</head>
+<body>
+    <div class = "container mt-5">
+    <div id="promoB" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+            <li data-target="#promoB" data-slide-to="0" class="active"></li>
+            <li data-target="#promoB" data-slide-to="1"></li>
+            <li data-target="#promoB" data-slide-to="2"></li>
+        </ul>
+
+<div class="carousel-inner">
+<div class="carousel-item active">
+    <img src="https://site.outlookindia.com/traveller/wp-content/uploads/2018/04/Bali-Indonesia-is-a-paradise.jpg" alt="Bali" width="1100" height="500">
+
+ <div class="carousel-caption">
+        <h3>Summer in Bali</h3>
+        <p>Experience the tropical Paradise.</p>
+        <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#bookingModal">
+            Book Now
+        </button>
+     </div>
+</div>
+
+<div class="carousel-item">
+<img src="https://cdn-v2.leotrippi.com/original_images/-Fabian_Bodet-14.jpg" alt="Alps" width="1100" height="500" >
+    <div class="carousel-caption">
+        <h3>Hiking in the Alps</h3>
+        <p>Adventure awaits on the Mountains</p>
+        <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#bookingModal">
+            Book Now
+        </button>
+    </div>
+</div>
+
+<div class="carousel-item">
+    <img src="https://www.thoughtco.com/thmb/bmpVHAa6YodPzfS3TDraAZQzTyo=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Vienna-148602463-56aacf7d3df78cf772b48c4f.jpg" 
+    alt="Vienna"  width="1100" height="500">
+
+    <div class="carousel-caption">
+        <h3>Architectural Marvels in Vienna</h3>
+        <p>The City of Music calls you.</p>
+        <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#bookingModal">
+            Book Now
+        </button>
+    </div>
+</div>
+
+</div>
+
+<a class="carousel-control-prev" href="#promoB" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+</a>
+
+<a class="carousel-control-next" href="#promoB" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+</a>
+
+</div>
+
+    </div>
+
+<!-- Modal -->
+<div class="modal fade" id="bookingModal">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Trip Details</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>Thank you for your interest! Our travel packages include flights, hotels, and guided tours.</p>
+                <p><strong>Special Offer:</strong> 20% off if you book today</p>
+               
+            </div>
+            <div class="modal-footer">
+                 <button type="button" class= "btn btn-danger" data-dismiss="modal">Close</button>
+                 <button type="button" class="btn btn-primary">Confirm Booking</button>
+            </div>
+
+
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
